@@ -1,4 +1,6 @@
-// Skills Section Logo's
+// =========================
+// Skills Section Logos
+// =========================
 import htmlLogo from './assets/tech_logo/html.png';
 import cssLogo from './assets/tech_logo/css.png';
 import javascriptLogo from './assets/tech_logo/javascript.png';
@@ -16,25 +18,43 @@ import githubLogo from './assets/tech_logo/github.png';
 import vscodeLogo from './assets/tech_logo/vscode.png';
 import postmanLogo from './assets/tech_logo/postman.png';
 import figmaLogo from './assets/tech_logo/figma.png';
-
-// Experience Section Logo's
-import zidio from "./assets/company_logo/zidio_development_logo.jpg"
-
-// Education Section Logo's
-import rkgit from './assets/education_logo/rkgit_logo.png';
-import rpm from './assets/education_logo/rpm_logo.png';
-import sddt from './assets/education_logo/sddt_logo.png';
-
-// Project Section Logo's
-import face from './assets/work_logo/face.png';
-import youtube from './assets/work_logo/youtube.jpg';
-import job from './assets/work_logo/job.png';
-import ticket from './assets/work_logo/ticket.png'
-import ai from './assets/work_logo/ai.png'
-import dashboard from './assets/work_logo/dashboard.png'
-import study from './assets/work_logo/study.png'
+import javaLogo from './assets/tech_logo/Java.jpg'; // corrected
+import IntelliLogo from './assets/tech_logo/IntelliJ.png';
 
 
+// =========================
+// Experience Section Logos
+// =========================
+import anudipLogo from './assets/company_logo/Anudip.png';
+
+// =========================
+// Education Section Logos
+// =========================
+import rkgitLogo from './assets/education_logo/rkgit_logo.png';
+import zcsLogo from './assets/education_logo/schoollogo.png';
+import sddtLogo from './assets/education_logo/sddt_logo.png';
+
+// =========================
+// Project Section Logos
+// =========================
+import faceLogo from './assets/work_logo/face.png';
+import youtubeLogo from './assets/work_logo/youtube.jpg';
+import jobLogo from './assets/work_logo/job.png';
+import ticketLogo from './assets/work_logo/ticket.png';
+import aiLogo from './assets/work_logo/ai.png';
+import dashboardLogo from './assets/work_logo/dashboard.png';
+import studyLogo from './assets/work_logo/study.png';
+import wander from './assets/work_logo/wanderlust.png';
+import food from './assets/work_logo/foodimg.png';
+import socio from './assets/work_logo/social.png';
+
+
+
+
+
+// =========================
+// Skills Info
+// =========================
 export const SkillsInfo = [
   {
     title: 'Frontend',
@@ -42,7 +62,7 @@ export const SkillsInfo = [
       { name: 'HTML', logo: htmlLogo },
       { name: 'CSS', logo: cssLogo },
       { name: 'JavaScript', logo: javascriptLogo },
-      { name: 'React JS', logo: reactjsLogo },
+      { name: 'React', logo: reactjsLogo },
       { name: 'Tailwind CSS', logo: tailwindcssLogo },
       { name: 'Bootstrap', logo: bootstrapLogo },
     ],
@@ -50,8 +70,8 @@ export const SkillsInfo = [
   {
     title: 'Backend',
     skills: [
-      { name: 'Node JS', logo: nodejsLogo },
-      { name: 'Express JS', logo: expressjsLogo },
+      { name: 'Node.js', logo: nodejsLogo },
+      { name: 'Express', logo: expressjsLogo },
       { name: 'MySQL', logo: mysqlLogo },
       { name: 'MongoDB', logo: mongodbLogo },
     ],
@@ -60,8 +80,9 @@ export const SkillsInfo = [
     title: 'Languages',
     skills: [
       { name: 'C', logo: cLogo },
-      { name: 'Python', logo: pythonLogo },
+      { name: 'Java', logo: javaLogo }, // corrected
       { name: 'JavaScript', logo: javascriptLogo },
+      { name: 'Python', logo: pythonLogo },
     ],
   },
   {
@@ -70,130 +91,91 @@ export const SkillsInfo = [
       { name: 'Git', logo: gitLogo },
       { name: 'GitHub', logo: githubLogo },
       { name: 'VS Code', logo: vscodeLogo },
+      { name: 'IntelliJ IDEA', logo: IntelliLogo }, // corrected
       { name: 'Postman', logo: postmanLogo },
       { name: 'Figma', logo: figmaLogo },
     ],
   },
 ];
 
-  export const experiences = [
-    {
-      id: 0,
-      img: zidio,
-      role: "Frontend Developer",
-      company: "Zidio Development",
-      type: "Internship",
-      date: "Aug 2024 - Sep 2024",
-      desc: "Designed and developed responsive web interfaces using React.js and Tailwind CSS. Integrated APIs for seamless functionality and optimized UI/UX across devices. Collaborated with the team in an Agile setup to ensure smooth project delivery.",
-      skills: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React JS",
-        "Node JS",
-        "Tailwind CSS",
-        "MongoDb",
-      ],
-    },
-  ];
-  
-  export const education = [
-    {
-      id: 0,
-      img: rkgit,
-      school: "Raj kumar goel Institute of technology, Ghaziabad",
-      date: "Nov 2021 - July 2025",
-      grade: "6.79 CGPA",
-      degree: "Bachelor of Technology - B.Tech(CSE)",
-    },
-    {
-      id: 1,
-      img: rpm,
-      school: "RPM Academy, Gorakhpur",
-      date: "july 2018 - April 2020",
-      grade: "84.8%",
-      degree: "CBSE(XII) - PCM",
-    },
-    {
-      id: 2,
-      img: sddt,
-      school: "SDDT Inter College Rudrapur, Gorakhpur",
-      date: "july 2016 - March 2018",
-      grade: "81.4%",
-      degree: "CBSE(X)",
-    },
-  ];
-  
-  export const projects = [
-    {
-      id: 0,
-      title: "Face Recognition Attendance System",
-      description:
-        "Built a real-time attendance tracking system that reduced manual effort by 90%. Implemented facial feature extraction and recognition with 80%+ accuracy for a dataset of 50+ users. Designed a Tkinter-based GUI and integrated automated CSV reporting for attendance logs.",
-      image: face,
-      tags: ["Python", "OpenCV", "Tkinter", "SQL", "face-recognition library", ],
-      github: "https://github.com/Anoopsingh023/Face-Recognition-Attendance-System",
-      // webapp: "https://githubprofiledetective.netlify.app/",
-    },
-    {
-      id: 1,
-      title: "YouTube Clone (Full-Stack MERN Application)",
-      description:
-        "Developed a full-stack video platform supporting 10+ core features including (JWT authentication), video uploads (Cloudinary), playlists, subscriptions, search, and dashboard. Built secure RESTful APIs with Mongoose schema modeling, async error handling, and protected endpoints. Deployed frontend & backend on Render and integrated with MongoDB Atlas, handling 20+ video records in cloud storage.",
-      image: youtube,
-      tags: ["React JS", "Node.js", "MongoDB", "Express", "HTML", "Tailwind CSS", "JavaScript", "JWT", "Cloudinary", "Render"],
-      github: "https://github.com/Anoopsingh023/My-youtube-clone",
-      webapp: "https://my-youtube-frontend.onrender.com/",
-    },
-    {
-      id: 2,
-      title: "Job Listing Portal",
-      description:
-      "- Collaborated with a 4-member agile team to develop a Job Listing Portal using React.js and Tailwind CSS, improving UI/UX for 1,000+ job seekers. Implemented responsive and reusable components, reducing page load time by 30% across devices. Integrated RESTful APIs fetching 10+ job listings per day with real-time updates, maintaining 100% data accuracy. Managed branches and pull requests using Git and GitHub for efficient team collaboration.",
-      image: job,
-      tags: ["React JS", "Node.js", "MongoDB", "Express", "HTML", "tailwind CSS", "JavaScript", "JWT", "Cloudinary", "Shadcn ui"],
-      github: "https://github.com/Anoopsingh023/Job-Listing-Portal",
-      // webapp: "https://movie-recommendation-app-jet.vercel.app/",
-    },
-    {
-      id: 3,
-      title: "Ticket Compare – Travel Fare Comparison Tool",
-      description:
-      "- A web-based application built with React.js that allows users to search routes and compare ticket prices across flights, buses, and trains. The tool integrates the RapidAPI Flight Search API to fetch real-time airfare data.",
-      image: ticket,
-      tags: ["React JS", "HTML", "tailwind CSS", "JavaScript",],
-      github: "https://github.com/Anoopsingh023/Ticket-Compare",
-      webapp: "https://ticket-compare-theta.vercel.app/",
-    },
-    {
-      id: 4,
-      title: "AI Studio – Interactive Prompt & Model Playground",
-      description:
-      "- AI Studio is a web-based platform that allows users to experiment with AI models in an intuitive and interactive way. The application provides a clean, responsive interface built with React, TypeScript, and Tailwind CSS, supporting both Light and Dark modes for accessibility.",
-      image: ai,
-      tags: ["React JS", "HTML", "tailwind CSS", "JavaScript",],
-      github: "https://github.com/Anoopsingh023/AI-Studio",
-      webapp: "https://ai-studio-ochre.vercel.app/",
-    },
-    {
-      id: 5,
-      title: "User Analytics Dashboard",
-      description:
-      "- The User Analytics Dashboard is a React-based web application that visualizes user data in an interactive and insightful way. It consumes mock user data from a public API and transforms it into meaningful insights using charts and tables. The dashboard summarizes key metrics such as total users, daily signups, avatar distribution, and recently joined users. It also provides a searchable and paginated list of users with sorting and detail viewing functionality. This project demonstrates strong skills in frontend development, data visualization, and state management while following a clean, modular architecture.",
-      image: dashboard,
-      tags: ["React JS", "HTML", "tailwind CSS", "JavaScript", "Recharts"],
-      github: "https://github.com/Anoopsingh023/user-analytics-dashboard",
-      webapp: "https://user-analytics-dashboard.vercel.app/",
-    },
-    {
-      id: 6,
-      title: "Study Material Aggregation Platform",
-      description:
-      "- The Study Material Aggregation Platform is a web application designed to centralize and organize academic resources in one place. It allows students to easily access notes, books, previous year question papers, tutorials, and other study materials without searching across multiple sources.",
-      image: study,
-      tags: ["HTML", "CSS", "JavaScript", ],
-      github: "https://github.com/Anoopsingh023/Study-Material-Aggregation-Platform",
-      webapp: "https://anoopsingh023.github.io/Study-Material-Aggregation-Platform/",
-    },
-    
-  ];  
+// =========================
+// Experience Info
+// =========================
+export const experiences = [
+  {
+    id: 0,
+    img: anudipLogo,
+    role: 'React Developer Trainee',
+    company: 'Anudip Foundation',
+    type: 'Training Program',
+    date: 'Aug 2025 - Oct 2025',
+    desc: 'I completed my training in React Development at Anudip Foundation under the guidance of Mr. Sahil Kaushik, where I gained hands-on experience in building modern, dynamic, and responsive user interfaces using React. During the program, I focused on developing reusable components, efficient state management, and seamless API integration. I also collaborated with a team on real-world projects, contributing to scalable and user-centric applications while following clean code practices and industry standards. This experience strengthened my ability to work in a team environment and deliver high-quality frontend solutions.',
+    skills: ['HTML', 'CSS', 'JavaScript', 'React'],
+  },
+];
+
+// =========================
+// Education Info
+// =========================
+export const education = [
+  {
+    id: 0,
+    img: rkgitLogo,
+    school: 'Raj Kumar Goel Institute of Technology, Ghaziabad',
+    date: 'July 2021 - June 2025',
+    grade: '7.04 CGPA',
+    degree: 'Bachelor of Technology in Computer Science and Engineering',
+  },
+  {
+    id: 1,
+    img: zcsLogo,
+    school: 'Zenith Convent School, Gorakhpur',
+    date: 'April 2019 - March 2020',
+    grade: '77.8%',
+    degree: 'Senior Secondary School, CBSE',
+  },
+  {
+    id: 2,
+    img: zcsLogo,
+    school: 'Zenith Convent School, Gorakhpur',
+    date: 'April 2017 - March 2018',
+    grade: '78.4%',
+    degree: 'Secondary School, CBSE',
+  },
+];
+
+// =========================
+// Projects Info
+// =========================
+export const projects = [
+  {
+    id: 0,
+    title: 'Wanderlust Web Application',
+    description:
+      'Wanderlust is a dynamic travel web application designed to inspire and assist travelers in discovering new destinations. Users can browse popular places, explore trip details, and create personalized itineraries. Built using HTML, CSS, JavaScript, Node.js, Express, and MongoDB, it features a clean, responsive interface with interactive maps and destination data for an engaging user experience.',
+    image: wander,
+    tags: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express', 'MongoDB'],
+    github: 'https://github.com/deveshrai19/Wanderlust-WebApp/tree/main',
+    webapp: 'https://wanderlust-travel-listings.onrender.com/listings',
+  },
+  {
+    id: 1,
+    title: 'Food Ordering Web Application',
+    description:
+      'A responsive food ordering web app built with React. It lets users browse menus, view detailed dishes, and manage their cart in real time, featuring a modern UI, dynamic components, and smooth user interactions for a seamless experience across all devices.',
+    image: food,
+    tags: ['React', 'HTML', 'CSS', 'JavaScript'],
+    github: 'https://github.com/deveshrai19/Food-Ordering-WebApp',
+    webapp: 'https://app-delivery-de-comida.vercel.app/',
+  },
+  {
+    id: 2,
+    title: 'Social Media Platform',
+    description:
+      'A fully responsive and interactive social media web application built using HTML, CSS, and JavaScript. It enables users to create posts, like, and comment, fostering real-time interaction through a clean and dynamic interface. Designed with a focus on usability, responsiveness, and smooth user experience across all devices.',
+    image: socio,
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    github: 'https://github.com/deveshrai19/Social-Media-Platform',
+    webapp: 'https://social-media-platform-nu.vercel.app/',
+  },
+];

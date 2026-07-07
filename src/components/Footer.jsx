@@ -14,7 +14,7 @@ const Footer = () => {
     <footer className="text-white py-8 px-[12vw] md:px-[7vw] lg:px-[20vw]">
       <div className="container mx-auto text-center">
         {/* Name / Logo */}
-        <h2 className="text-xl font-semibold text-purple-500">Anoop Kumar Singh</h2>
+        <h2 className="text-xl font-semibold text-purple-500">Devesh Kumar Rai</h2>
 
         {/* Navigation Links - Responsive */}
         <nav className="flex flex-wrap justify-center space-x-4 sm:space-x-6 mt-4">
@@ -40,11 +40,10 @@ const Footer = () => {
           {[
             // { icon: <FaFacebook />, link: "https://www.facebook.com/tarun.kaushik.3511041/" },
             // { icon: <FaTwitter />, link: "https://twitter.com/CodingMaster6?s=09" },
-            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/anoop-kumar-singh-8a37a4227/" },
-            { icon: <FaGithub />, link: "https://github.com/Anoopsingh023" },
+            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/devesh-kumar-rai-510aab261/" },
+            { icon: <FaGithub />, link: "https://github.com/deveshrai19" },
             // { icon: <FaInstagram />, link: "https://www.instagram.com/coding_.master/" },
             // { icon: <FaYoutube />, link: "https://www.youtube.com/codingmasteryt" },
-            
           ].map((item, index) => (
             <a
               key={index}
@@ -60,7 +59,7 @@ const Footer = () => {
 
         {/* Copyright Text */}
         <p className="text-sm text-gray-400 mt-6">
-          © 2025 Anoop Kumar Singh. All rights reserved.
+          © 2025 Devesh Kumar Rai. All rights reserved.
         </p>
       </div>
     </footer>

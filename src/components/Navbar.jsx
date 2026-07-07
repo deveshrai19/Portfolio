@@ -39,16 +39,18 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[10vw] ${
-        isScrolled ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md" : "bg-transparent"
+        isScrolled
+          ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md"
+          : "bg-transparent"
       }`}
     >
       <div className="text-white py-5 flex justify-between items-center">
         {/* Logo */}
         <div className="text-lg font-semibold cursor-pointer">
           <span className="text-[#8245ec]">&lt;</span>
-          <span className="text-white">Anoop</span>
+          <span className="text-white">Devesh</span>
           <span className="text-[#8245ec]">/</span>
-          <span className="text-white">Singh</span>
+          <span className="text-white"></span>
           <span className="text-[#8245ec]">&gt;</span>
         </div>
 
@@ -71,20 +73,20 @@ const Navbar = () => {
         {/* Social Icons */}
         <div className="hidden md:flex space-x-4">
           <a
-            href="https://github.com/Anoopsingh023"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-300 hover:text-[#8245ec]"
-          >
-            <FaGithub size={24} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/anoop-kumar-singh-8a37a4227/"
+            href="https://www.linkedin.com/in/devesh-kumar-rai-510aab261/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#8245ec]"
           >
             <FaLinkedin size={24} />
+          </a>
+          <a
+            href="https://github.com/deveshrai19"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-[#8245ec]"
+          >
+            <FaGithub size={24} />
           </a>
         </div>
 
@@ -122,20 +124,20 @@ const Navbar = () => {
             ))}
             <div className="flex space-x-4">
               <a
-                href="https://github.com/Anoopsingh023"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white"
-              >
-                <FaGithub size={24} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/anoop-kumar-singh-8a37a4227/"
+                href="https://www.linkedin.com/in/devesh-kumar-rai-510aab261/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white"
               >
                 <FaLinkedin size={24} />
+              </a>
+              <a
+                href="https://github.com/deveshrai19"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-white"
+              >
+                <FaGithub size={24} />
               </a>
             </div>
           </ul>
